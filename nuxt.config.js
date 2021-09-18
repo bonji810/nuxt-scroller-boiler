@@ -15,16 +15,19 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:'stylesheet', href: "https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b" }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: '~/assets/scss/app.scss', lang: 'scss' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/client.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
